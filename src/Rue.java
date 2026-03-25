@@ -1,8 +1,15 @@
 public class Rue {
   private long idOrigin;
   private long idDestination;
-  private long distance;
+  private double distance;
   private String name;
+
+  public Rue(long idOrigin, long idDestination, double distance, String name) {
+    this.idOrigin = idOrigin;
+    this.idDestination = idDestination;
+    this.distance = distance;
+    this.name = name;
+  }
 
   public long getIdOrigin() {
     return idOrigin;
@@ -20,7 +27,7 @@ public class Rue {
     this.idDestination = idDestination;
   }
 
-  public long getDistance() {
+  public double getDistance() {
     return distance;
   }
 
